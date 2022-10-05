@@ -1,0 +1,68 @@
+<head>
+    <title>homepage</title>
+        <style>
+           body
+           {
+            background-color: #cefaff;
+           }
+            
+            h3{
+                font-weight: bold;
+                font-size:xx-large;
+                padding-top: 25px;
+            }
+            }
+            input[type=file]
+            {
+                width: 200px; 
+                height: 45px;
+            }
+            input[type=submit]
+            {
+                width: 200px; 
+                height: 45px;
+                outline-style: solid;
+                outline-color: gray;
+            }
+            ul{
+                 list-style-type: none;
+                font-size: 26px;
+                 margin: 40px;
+                padding: 0;
+                 overflow: hidden;
+
+                }
+             li {
+                 display: inline;
+                 float: right;
+                }
+                li a{
+                    display: block;
+                    color: black;
+                    text-align: center;
+                    padding: 24px;
+                 }
+                 li a:hover {
+                     background-color: #8FBC8F;
+                             
+                    }       
+        </style>
+    </head>
+    <body>
+        <center>
+            <h3>ABC MAIL DISPATCHER</h3></center>
+            <ul>
+                <li><a href="about.html">ABOUT PAGE</a></li>
+                <li><a href="mail.html">COMPOSE</a></li> 
+            </ul>
+            <center>
+          <form id="form" enctype = "multipart/form-data" action = "sample.py" method = "post" >
+            <input type="file"  id="csv" name="filename" accept=".csv"></input><br><br>
+            <br>
+            <input type="submit" id="val" name="val"></input><br><br><br>
+            <input type="submit" id="val" name="valid" value="valid mail"></input><br><br><br>
+            <input type="submit" id="val" name="invalid" value="invalid mail"></input>
+          </form>  
+        </center> 
+    </body>
+</html>

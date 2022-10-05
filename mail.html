@@ -1,0 +1,93 @@
+<head>
+    <title>mail</title>
+        <style>
+            h3{
+                padding-top: 25px;
+                font-weight: bold;
+                font-size: xx-large;
+            }
+
+            form
+            {
+            display: block;
+            box-sizing: border-box;
+            box-shadow: #111;
+            font-size:x-large;
+            color:black;
+             }
+             input{
+                 width:25%;
+                 height: 8%;
+             }
+            
+                input.intro{
+                    width: 25%;
+                    height: 8%;
+                    padding: 15px 20px;
+                    margin: 8px 0;
+                    }
+            ul{
+                 list-style-type: none;
+                font-size: 26px;
+                 margin: 30px;
+                padding: 0;
+                 overflow: hidden;
+
+                }
+             li {
+                 display: inline;
+                 float: right;
+                }
+                li a{
+                    display: block;
+                    color: black;
+                    text-align: center;
+                    padding: 24px;
+                 }
+                 li a:hover {
+                     background-color: #8FBC8F;
+                             
+                    }
+                    body
+                     {
+                     background-color: #cefaff;
+                    }
+                button
+                     {
+                border: none;
+                color:black;
+                padding: 15px 32px;
+                text-align: center;
+                display: inline-block;
+                font-size: 16px;
+                outline-style: solid;
+                outline-color: gray;
+                }
+            
+        </style>
+    
+    </head>
+    <body><center>
+        <h3>ABC MAIL DISPATCHER</h3></center>
+        <ul>
+            
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="sample.html">HOME </a></li>
+        </ul>
+        <center>
+       <form id="form" method="post" enctype = "multipart/form-data" action = "mail.py">
+           <label for="subject" name="subject">Subject</label>
+           <input type="text" name="subject" class="intro" size="20"></input><br><br>
+           <label for="message" name="message">Message</label>
+           <textarea id="message" rows="4" cols="50" class="intro"></textarea><br><br>
+           <label for="attach" name="attach">attachment</label>
+           <input type="file" name="attach" class="intro"></input><br><br>
+           <button onclick="myFunction()">Send</button>
+           <script>
+           function myFunction() {
+               alert("Mail Sent Successsfully!");
+            }
+            </script>
+    </form> 
+        </center>
+</body>
